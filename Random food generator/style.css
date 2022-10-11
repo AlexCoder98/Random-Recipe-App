@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Noto Sans', arial, sans-serif;
+    ;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 2% auto;
+    padding: 2%;
+    background-color: rgb(242, 231, 217);
+    border-radius: 30px;
+}
+
+#wrapper .random-recipe-title {
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#wrapper main {
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#wrapper .img-container {
+    width: 40%;
+    height: 100%;
+}
+
+#wrapper .img-container .random-image {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+    border-radius: 30px;
+    box-shadow: 0 0 7px black;
+}
+
+#wrapper .recipe-container {
+    width: 50%;
+}
+
+#wrapper .recipe-container .ingredients {
+    font-size: 20px;
+    margin: 2% 0;
+}
+
+#wrapper .recipe-container .ingredients-list {
+    margin-left: 2%;
+}
+
+#wrapper footer {
+    width: 100%;
+}
+
+#wrapper footer .choose-random-meal {
+    display: block;
+    margin: 10% auto;
+    width: fit-content;
+    padding: 1% 2%;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(219, 168, 101);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+#wrapper footer .choose-random-meal:hover {
+    font-size: 28px;
+}
+
+@media (max-width: 1024px) {
+
+    #wrapper {
+        padding: 3%;
+    }
+
+    #wrapper main {
+        flex-direction: column;
+    }
+
+    #wrapper .random-recipe-title {
+        font-size: 30px;
+    }
+
+    #wrapper .img-container {
+        width: 90%;
+        align-self: center;
+        margin-bottom: 5%;
+    }
+
+    #wrapper .recipe-container {
+        width: 100%;
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    #wrapper .recipe-container .ingredients-list {
+        margin-left: 4%;
+    }
+
+    #wrapper footer .choose-random-meal {
+        padding: 2% 3%;
+        font-size: 22px;
+    }
+
+    #wrapper footer .choose-random-meal:hover {
+        font-size: 24px;
+    }
+
+}
